@@ -30,7 +30,7 @@ class Tienda:
     def aplicar_descuento(self,nombre, porcentaje):
         if 0 <= porcentaje and porcentaje <= 100:
             producto = self.buscar_producto(nombre)
-            nuevoPrecio = producto.precio * (1 - porcentaje / 100)
+            nuevoPrecio = producto.precio * (1 - porcentaje / 100.00)
             producto.actualizar_precio(nuevoPrecio)
             return True
         else:
