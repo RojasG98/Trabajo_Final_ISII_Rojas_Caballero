@@ -31,7 +31,7 @@ class Tienda:
         if 0 <= porcentaje and porcentaje <= 100:
             producto = self.buscar_producto(nombre)
             nuevoPrecio = producto.precio * (1 - porcentaje / 100.00)
-            producto.actualizar_precio(nuevoPrecio)
+            producto.precio = nuevoPrecio
             return True
         else:
             raise ValueError("Porcentaje de descuento inválido")
