@@ -89,7 +89,7 @@ def test_aplicar_descuento_con_mock():
     tienda.inventario = [mock_producto]
     tienda.aplicar_descuento("Chocolate", 10)
     
-    assert mock_producto.precio == 1.8
+    assert mock_producto.precio == pytest.approx(1.80)
 
 def test_flujo_completo_carrito(tienda_con_productos):
     carrito = []
