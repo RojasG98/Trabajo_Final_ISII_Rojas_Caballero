@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  # --- ETAPA 1: BUILD & TEST ---
+  
   pruebas-unitarias:
     runs-on: ubuntu-latest
     steps:
